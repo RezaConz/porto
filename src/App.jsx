@@ -11,13 +11,13 @@ const App = () => {
         <Routes>
           <Route path='/porto' element={<Home />} />
           <Route
-            path='/porto/*'
+            path='/*'
             element={
               <>
                 <Routes>
-                  <Route path='/about' element={<About />} />
-                  <Route path='/projects' element={<Projects />} />
-                  <Route path='/contact' element={<Contact />} />
+                  <Route path='/porto/about' element={<About />} />
+                  <Route path='/porto/projects' element={<Projects />} />
+                  <Route path='/porto/contact' element={<Contact />} />
                 </Routes>
                 <Footer />
               </>
